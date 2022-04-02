@@ -1,0 +1,38 @@
+body {
+    background: azure;
+}
+table {
+    margin: 50px;
+    border-spacing: 20px;
+}
+
+tr {
+    border: 5px solid green;
+    padding: 40px;
+    background: orange;
+}
+td {
+    border: 5px solid orange;
+    padding: 40px;
+    background: green;
+}
+
+tr:nth-child(even) td:nth-child(odd),
+tr:nth-child(odd) td:nth-child(even)
+ { 
+    border: 5px solid green;
+    padding: 40px;
+    background: orange;
+}
+
+tr:nth-child(even) td:nth-child(odd) div,
+tr:nth-child(odd) td:nth-child(even) div {
+    padding: 20px;
+    background: green;
+}
+
+tr:nth-child(odd) td:nth-child(odd) div,
+tr:nth-child(even) td:nth-child(even) div {
+    padding: 20px;
+    background: orange;
+}
